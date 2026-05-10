@@ -13,6 +13,10 @@ class ApiClient {
     const res = await axiosInstance.put<T>(url, data);
     return res.data;
   }
+  async patch<T>(url: string, data?: unknown): Promise<T> {
+    const res = await axiosInstance.patch<T>(url, data);
+    return res.data;
+  }
   async delete<T>(url: string): Promise<T> {
     const res = await axiosInstance.delete<T>(url);
     return res.data;

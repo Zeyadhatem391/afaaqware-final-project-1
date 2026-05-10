@@ -3,7 +3,6 @@ import { ENV } from "@/config/env";
 const TOKEN_KEY = ENV.ACCESS_TOKEN_KEY || "access_token";
 
 export const TokenService = {
-  // حفظ التوكن
   setToken: (token: string, expiresDays = 1) => {
     Cookies.set(TOKEN_KEY, token, {
       expires: expiresDays,

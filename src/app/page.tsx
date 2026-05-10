@@ -1,5 +1,9 @@
-import PublicLayout from "@/shared/components/layout/PublicLayout";
+import GetUsers from "@/modules/users/components/GetUsers";
 
 export default function page() {
-  return <PublicLayout>page</PublicLayout>;
+  return (
+    <>
+      <GetUsers />
+    </>
+  );
 }
